@@ -1,0 +1,50 @@
+---
+const personalImageAlt = "Miguel Ángel"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/midudev.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://www.linkedin.com/in/angel-daniel-reyes-colindres-04185a290/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hola, mi nombre es Angel
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    Angel Reyes <strong
+      >Programador Junior</strong
+    > Vivo en Guatemala, hablo fluido ingles y disponibilidad de trabajo
+    a cualquier hora<br><br><br>
+    <strong>"Descubre mi mundo, conoce mi camino"</strong> - Ángel Daniel  <br>
+     En este sitio web tendrás la oportunidad de conocerme mejor y explorar los proyectos que he desarrollado a lo largo de mi trayectoria educativa en el ámbito del desarrollo de software. Aquí encontrarás mi información personal y de contacto, los lenguajes y tecnologías que domino y he utilizado, así como otros datos relevantes sobre mi experiencia. Además, podrás acceder a detalles específicos de cada uno de mis proyectos, junto con enlaces a sus respectivos repositorios en GitHub. ¡Espero que disfrutes navegando y conociendo más sobre mi trabajo y mis pasiones!
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="areyes-2019092@kinal.or.gt">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/angel-daniel-reyes-colindres-04185a290/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
